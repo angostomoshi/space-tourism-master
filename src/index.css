@@ -1,0 +1,89 @@
+:root {
+  --dark: "0B0D17";
+  --light: "#D0D6F9";
+  --barlow: "Barlow", sans-serif;
+  --lato: "Lato", sans-serif;
+  --barlow-condensed: "Barlow Condensed", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  font-size: clamp(0.938rem, 0.875rem + 0.313vw, 1.125rem);
+  line-height: 2rem;
+  font-family: var(--barlow);
+  overflow-x: hidden;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--lato);
+  line-height: 1.2;
+  color: #fff;
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: clamp(5rem, 3.542rem + 7.292vw, 9.375rem);
+}
+
+h2 {
+  font-size: clamp(1.25rem, -0.417rem + 8.333vw, 6.25rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 0.5rem + 3.75vw, 3.5rem);
+}
+
+h4 {
+  font-size: clamp(1rem, 0.667rem + 1.667vw, 2rem);
+}
+
+h5 {
+  font-family: var(--barlow-condensed);
+  font-size: clamp(1rem, 0.75rem + 1.25vw, 1.75rem);
+  line-height: 1.2;
+  letter-spacing: 0.2969rem;
+  color: #d0d6f9;
+  font-weight: inherit;
+}
